@@ -2,20 +2,13 @@
 
 const calculadora = criaCalculadora()
 
-//events
-
 calculadora.inicia()
-
-//functions
 
 function criaCalculadora() {
   return {
-    //Atributos do obj
-
     display: document.querySelector('.display'),
     clear: document.querySelector('.btn-clear'),
 
-    //metodos do obj
     inicia: function () {
       this.cliqueiBotoes()
       this.pressEnter()
