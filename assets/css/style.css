@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -13,63 +13,52 @@ body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 840px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form input,
-form label,
-form button {
+ input,
+ label,
+ button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
 
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
+ input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
 
-form button:hover {
+ button:hover {
   background: var(--primary-color-darker);
 }
 
 .calculadora {
-  width: 400px;
+  width: 80%;
 }
 
-.display {
-  font-size: 2em;
+.calculadora .display {
+  font-size: 16px;
   width: 100%;
-  text-align: right;
+  height: 50px;
+  padding: 0 20px;
 }
 
-.btn {
+.calculadora .btn {
   width: 100%;
   height: 50px;
   font-size: 1em;
@@ -78,6 +67,86 @@ form button:hover {
   cursor: pointer;
 }
 
-.btn:hover {
+.calculadora .btn:hover {
   background: #9e9e9e;
+}
+
+.calculadora .btn-clear{
+  color: #fff;
+ 
+  background-color: #fd8419;
+
+  transition: .3s;
+}
+
+.calculadora .btn-clear:hover{
+  background-color: #dc7820;
+}
+
+.calculadora .btn-del{
+  color: #fff;
+  font-size: 22px; 
+  background-color: #fb1818;
+
+  transition: .3s;
+}
+
+.calculadora .btn-del:hover{
+  background-color: #ce2525;
+}
+
+.calculadora .btn-plus{
+  color: #fff;
+  font-size: 18px; 
+  background-color: #B10DC9;
+
+  transition: .3s;
+}
+
+.calculadora .btn-plus:hover{
+  background-color: #800f92;
+}
+
+.calculadora .btn-less{
+  color: #fff;
+  font-size: 18px; 
+  background-color: #2ECC40;
+
+  transition: .3s;
+}
+
+.calculadora .btn-less:hover{
+  background-color: #227f4a;
+}
+
+.calculadora .btn-confirm{
+  color: #fff;
+  font-size: 22px;
+  background-color: #036bd4;
+
+  transition: .3s;
+}
+
+.calculadora .btn-confirm:hover{
+  background-color: #001f3f;
+}
+
+.linkdin{
+  background-color: #008cff;
+  color: black;
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+
+  transition: .3s;
+}
+
+.linkdin:hover{
+  font-size: 21px;
 }
